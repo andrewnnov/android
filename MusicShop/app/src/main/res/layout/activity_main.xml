@@ -117,6 +117,7 @@
         <Button
             android:id="@+id/minusButton"
             android:text="-"
+            android:onClick="decreaseButton"
             android:textColor="@android:color/white"
             android:layout_toRightOf="@id/currencyTextView"
             android:layout_below="@id/quantityTitleTextView"
@@ -142,6 +143,7 @@
         <Button
             android:id="@+id/plusButton"
             android:text="+"
+            android:onClick="increaseQuantity"
             android:textColor="@android:color/white"
             android:layout_toRightOf="@id/quantityTextView"
             android:layout_below="@id/quantityTitleTextView"

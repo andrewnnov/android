@@ -18,5 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView helloTextView = findViewById(R.id.nameTextView);
         helloTextView.setText("Hello, Java");
+        helloTextView.setBackgroundColor(0x55FF0000);
+        helloTextView.setTextSize(30);
     }
 }
