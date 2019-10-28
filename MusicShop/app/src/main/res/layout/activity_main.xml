@@ -54,12 +54,13 @@
         android:layout_height="wrap_content" />
 
     <ImageView
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/viol"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="20dp"
+        android:id="@+id/goodsImageView"
         android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/guitar" />
 
 
     <RelativeLayout
@@ -119,11 +120,12 @@
             android:text="-"
             android:onClick="decreaseButton"
             android:textColor="@android:color/white"
-            android:layout_toRightOf="@id/currencyTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_below="@id/quantityTitleTextView"
             android:background="@color/colorPrimaryDark"
-            android:layout_marginStart="150dp"
-            android:layout_marginLeft="150dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginLeft="50dp"
             android:layout_width="50dp"
             android:layout_height="50dp"/>
 
