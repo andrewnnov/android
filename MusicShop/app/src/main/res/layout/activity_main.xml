@@ -124,7 +124,7 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@id/quantityTitleTextView"
             android:background="@color/colorPrimaryDark"
-            android:layout_marginStart="210dp"
+            android:layout_marginStart="200dp"
             android:layout_marginLeft="50dp"
             android:layout_width="50dp"
             android:layout_height="50dp"/>
@@ -159,6 +159,7 @@
 
     <Button
         android:text="Add to card"
+        android:onClick="addToCart"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimaryDark"
         android:layout_marginTop="40dp"
