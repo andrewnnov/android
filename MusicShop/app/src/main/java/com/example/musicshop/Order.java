@@ -8,4 +8,6 @@ public class Order {
     int quantity;
 
     double orderPrice;
+
+    double price;
 }
