@@ -21,23 +21,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayList<String> post = new ArrayList();
-        for (int i = 0; i < 20; i ++) {
-            post.add("post " + i);
-            Log.i("post ", post.get(i));
-        }
+        ListView listView = findViewById(R.id.colorListView);
 
-        ListView listView = findViewById(R.id.listView);
+        final ArrayList<String> colorArrayList = new ArrayList<>();
+        colorArrayList.add("Красный");
+        colorArrayList.add("Оранжевый");
+        colorArrayList.add("Желтый");
+        colorArrayList.add("Зеленый");
+        colorArrayList.add("Голубой");
+        colorArrayList.add("Синий");
+        colorArrayList.add("Фиолетовый");
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, post);
+        ArrayAdapter<String> colorsArrayAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, colorArrayList);
 
-        listView.setAdapter(arrayAdapter);
+        listView.setAdapter(colorsArrayAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "Hello", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Номер" + position +
+                        " - " + colorArrayList.get(position), Toast.LENGTH_SHORT).show();
             }
         });
     }
